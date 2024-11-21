@@ -32,15 +32,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Brand));
             this.DGVbrand = new System.Windows.Forms.DataGridView();
-            this.managerbrandlable = new System.Windows.Forms.Label();
-            this.brandlowerpanel = new System.Windows.Forms.Panel();
-            this.brandlogo = new System.Windows.Forms.PictureBox();
-            this.addbrandbtn = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.managerbrandlable = new System.Windows.Forms.Label();
+            this.brandlowerpanel = new System.Windows.Forms.Panel();
+            this.addbrandbtn = new System.Windows.Forms.Button();
+            this.brandlogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGVbrand)).BeginInit();
             this.brandlowerpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.brandlogo)).BeginInit();
@@ -85,6 +85,42 @@
             this.DGVbrand.Size = new System.Drawing.Size(1306, 659);
             this.DGVbrand.TabIndex = 1;
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column1.HeaderText = "No";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 48;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column2.HeaderText = "ID";
+            this.Column2.Name = "Column2";
+            this.Column2.Visible = false;
+            this.Column2.Width = 45;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "Brand";
+            this.Column3.Name = "Column3";
+            // 
+            // Edit
+            // 
+            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Edit.HeaderText = "";
+            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
+            this.Edit.Name = "Edit";
+            this.Edit.Width = 5;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "";
+            this.Delete.Name = "Delete";
+            this.Delete.Width = 5;
+            // 
             // managerbrandlable
             // 
             this.managerbrandlable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,16 +143,6 @@
             this.brandlowerpanel.Size = new System.Drawing.Size(1306, 79);
             this.brandlowerpanel.TabIndex = 0;
             // 
-            // brandlogo
-            // 
-            this.brandlogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("brandlogo.BackgroundImage")));
-            this.brandlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.brandlogo.Location = new System.Drawing.Point(3, 18);
-            this.brandlogo.Name = "brandlogo";
-            this.brandlogo.Size = new System.Drawing.Size(59, 50);
-            this.brandlogo.TabIndex = 1;
-            this.brandlogo.TabStop = false;
-            // 
             // addbrandbtn
             // 
             this.addbrandbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -128,42 +154,17 @@
             this.addbrandbtn.Size = new System.Drawing.Size(72, 64);
             this.addbrandbtn.TabIndex = 3;
             this.addbrandbtn.UseVisualStyleBackColor = true;
+            this.addbrandbtn.Click += new System.EventHandler(this.addbrandbtn_Click);
             // 
-            // Column1
+            // brandlogo
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "No";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 48;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "ID";
-            this.Column2.Name = "Column2";
-            this.Column2.Visible = false;
-            this.Column2.Width = 43;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Brand";
-            this.Column3.Name = "Column3";
-            // 
-            // Edit
-            // 
-            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Edit.HeaderText = "";
-            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
-            this.Edit.Name = "Edit";
-            this.Edit.Width = 5;
-            // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Delete.HeaderText = "";
-            this.Delete.Name = "Delete";
-            this.Delete.Width = 5;
+            this.brandlogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("brandlogo.BackgroundImage")));
+            this.brandlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.brandlogo.Location = new System.Drawing.Point(3, 18);
+            this.brandlogo.Name = "brandlogo";
+            this.brandlogo.Size = new System.Drawing.Size(59, 50);
+            this.brandlogo.TabIndex = 1;
+            this.brandlogo.TabStop = false;
             // 
             // Brand
             // 

@@ -18,7 +18,22 @@ namespace WindowsFormsApp1
             InitializeComponent();
             customizedesign();
         }
+        private Form activeForm = null;
+        public void openChildForm(Form childForm)
+        {
+            if (activeForm != null) 
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            titlelable.Text = childForm.Text;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront(); 
+            childForm.Show();
 
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -68,16 +83,19 @@ namespace WindowsFormsApp1
 
         private void productlistbtn_Click(object sender, EventArgs e)
         {
+            openChildForm(new Product());
             hidesubmenu();
         }
 
         private void categorybtn_Click(object sender, EventArgs e)
         {
+            openChildForm(new category());
             hidesubmenu();
         }
 
         private void brandbtn_Click(object sender, EventArgs e)
         {
+            openChildForm(new Brand());
             hidesubmenu();
         }
 
@@ -93,7 +111,7 @@ namespace WindowsFormsApp1
 
         private void Main_Load(object sender, EventArgs e)
         {
-           
+            
         }
 
 
@@ -145,7 +163,7 @@ namespace WindowsFormsApp1
 
         private void supllierbtn_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Supplier());
         }
 
         private void recordbtn_Click_1(object sender, EventArgs e)
@@ -169,7 +187,9 @@ namespace WindowsFormsApp1
         }
 
         private void userbtn_Click_1(object sender, EventArgs e)
+
         {
+            openChildForm(new User_Account());
             hidesubmenu();
         }
 

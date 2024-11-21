@@ -61,6 +61,7 @@
             this.closepic.Size = new System.Drawing.Size(50, 50);
             this.closepic.TabIndex = 1;
             this.closepic.TabStop = false;
+            this.closepic.Click += new System.EventHandler(this.closepic_Click);
             // 
             // categoryModulelable
             // 
@@ -81,6 +82,7 @@
             this.cancelbtn.TabIndex = 11;
             this.cancelbtn.Text = "Cancel";
             this.cancelbtn.UseVisualStyleBackColor = false;
+            this.cancelbtn.Click += new System.EventHandler(this.cancelbtn_Click);
             // 
             // Updatebtn
             // 
@@ -102,6 +104,7 @@
             this.Savebtn.TabIndex = 9;
             this.Savebtn.Text = "Save";
             this.Savebtn.UseVisualStyleBackColor = true;
+            this.Savebtn.Click += new System.EventHandler(this.Savebtn_Click);
             // 
             // textBoxcategoryname
             // 
@@ -109,6 +112,7 @@
             this.textBoxcategoryname.Name = "textBoxcategoryname";
             this.textBoxcategoryname.Size = new System.Drawing.Size(548, 22);
             this.textBoxcategoryname.TabIndex = 8;
+            this.textBoxcategoryname.TextChanged += new System.EventHandler(this.textBoxcategoryname_TextChanged);
             // 
             // categoryName
             // 

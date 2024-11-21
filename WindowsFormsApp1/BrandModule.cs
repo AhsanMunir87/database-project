@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
 
         private void closepic_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+             this.Dispose();
         }
 
         private void BrandName_Click(object sender, EventArgs e)
@@ -55,6 +55,11 @@ namespace WindowsFormsApp1
 
         private void cancelbtn_Click(object sender, EventArgs e)
         {
+            clear();
+        }
+        public void clear()
+        {
+            textBoxbrandname.Clear();
 
         }
     }

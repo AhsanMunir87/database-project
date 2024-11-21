@@ -153,6 +153,7 @@
             this.addbrandbtn.Size = new System.Drawing.Size(72, 64);
             this.addbrandbtn.TabIndex = 3;
             this.addbrandbtn.UseVisualStyleBackColor = true;
+            this.addbrandbtn.Click += new System.EventHandler(this.addbrandbtn_Click);
             // 
             // categorylogo
             // 

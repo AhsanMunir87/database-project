@@ -16,5 +16,32 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        public void clear()
+        {
+            textBoxcategoryname.Clear();
+            textBoxcategoryname.Focus();
+            Savebtn.Enabled = true;
+            Updatebtn.Enabled = false;
+        }
+
+        private void textBoxcategoryname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Savebtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancelbtn_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+
+        private void closepic_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

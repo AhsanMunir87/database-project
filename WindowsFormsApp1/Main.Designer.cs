@@ -44,7 +44,6 @@
             this.stcokadjustmentbtn = new System.Windows.Forms.Button();
             this.stockentrybtn = new System.Windows.Forms.Button();
             this.instockbtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelsubpro = new System.Windows.Forms.Panel();
             this.brandbtn = new System.Windows.Forms.Button();
             this.categorybtn = new System.Windows.Forms.Button();
@@ -57,6 +56,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.titlelable = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.dashboardpanel.SuspendLayout();
             this.panelsubsetting.SuspendLayout();
             this.panelsubrecord.SuspendLayout();
@@ -79,7 +79,6 @@
             this.dashboardpanel.Controls.Add(this.supllierbtn);
             this.dashboardpanel.Controls.Add(this.panelsubstock);
             this.dashboardpanel.Controls.Add(this.instockbtn);
-            this.dashboardpanel.Controls.Add(this.button1);
             this.dashboardpanel.Controls.Add(this.panelsubpro);
             this.dashboardpanel.Controls.Add(this.Productbtn);
             this.dashboardpanel.Controls.Add(this.dashboardbtn);
@@ -88,7 +87,7 @@
             this.dashboardpanel.Location = new System.Drawing.Point(0, 0);
             this.dashboardpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dashboardpanel.Name = "dashboardpanel";
-            this.dashboardpanel.Size = new System.Drawing.Size(297, 1061);
+            this.dashboardpanel.Size = new System.Drawing.Size(297, 633);
             this.dashboardpanel.TabIndex = 0;
             // 
             // logoutbtn
@@ -97,11 +96,11 @@
             this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutbtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.logoutbtn.Location = new System.Drawing.Point(0, 1006);
+            this.logoutbtn.Location = new System.Drawing.Point(0, 1005);
             this.logoutbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logoutbtn.Name = "logoutbtn";
             this.logoutbtn.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.logoutbtn.Size = new System.Drawing.Size(297, 55);
+            this.logoutbtn.Size = new System.Drawing.Size(280, 55);
             this.logoutbtn.TabIndex = 21;
             this.logoutbtn.Text = " Logout";
             this.logoutbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -115,9 +114,9 @@
             this.panelsubsetting.Controls.Add(this.userbtn);
             this.panelsubsetting.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubsetting.Location = new System.Drawing.Point(0, 893);
-            this.panelsubsetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelsubsetting.Margin = new System.Windows.Forms.Padding(4);
             this.panelsubsetting.Name = "panelsubsetting";
-            this.panelsubsetting.Size = new System.Drawing.Size(297, 112);
+            this.panelsubsetting.Size = new System.Drawing.Size(280, 112);
             this.panelsubsetting.TabIndex = 20;
             // 
             // storebtn
@@ -130,7 +129,7 @@
             this.storebtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.storebtn.Name = "storebtn";
             this.storebtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.storebtn.Size = new System.Drawing.Size(297, 57);
+            this.storebtn.Size = new System.Drawing.Size(280, 57);
             this.storebtn.TabIndex = 21;
             this.storebtn.Text = "Store";
             this.storebtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,7 +146,7 @@
             this.userbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userbtn.Name = "userbtn";
             this.userbtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.userbtn.Size = new System.Drawing.Size(297, 55);
+            this.userbtn.Size = new System.Drawing.Size(280, 55);
             this.userbtn.TabIndex = 20;
             this.userbtn.Text = "User";
             this.userbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,7 +163,7 @@
             this.setting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.setting.Name = "setting";
             this.setting.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.setting.Size = new System.Drawing.Size(297, 55);
+            this.setting.Size = new System.Drawing.Size(280, 55);
             this.setting.TabIndex = 19;
             this.setting.Text = "Setting";
             this.setting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -178,9 +177,9 @@
             this.panelsubrecord.Controls.Add(this.salerecordbtn);
             this.panelsubrecord.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubrecord.Location = new System.Drawing.Point(0, 728);
-            this.panelsubrecord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelsubrecord.Margin = new System.Windows.Forms.Padding(4);
             this.panelsubrecord.Name = "panelsubrecord";
-            this.panelsubrecord.Size = new System.Drawing.Size(297, 110);
+            this.panelsubrecord.Size = new System.Drawing.Size(280, 110);
             this.panelsubrecord.TabIndex = 18;
             // 
             // POSrecordbtn
@@ -193,7 +192,7 @@
             this.POSrecordbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.POSrecordbtn.Name = "POSrecordbtn";
             this.POSrecordbtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.POSrecordbtn.Size = new System.Drawing.Size(297, 54);
+            this.POSrecordbtn.Size = new System.Drawing.Size(280, 54);
             this.POSrecordbtn.TabIndex = 19;
             this.POSrecordbtn.Text = "POS Record";
             this.POSrecordbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -210,7 +209,7 @@
             this.salerecordbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.salerecordbtn.Name = "salerecordbtn";
             this.salerecordbtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.salerecordbtn.Size = new System.Drawing.Size(297, 55);
+            this.salerecordbtn.Size = new System.Drawing.Size(280, 55);
             this.salerecordbtn.TabIndex = 18;
             this.salerecordbtn.Text = "Sale History";
             this.salerecordbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -227,7 +226,7 @@
             this.recordbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.recordbtn.Name = "recordbtn";
             this.recordbtn.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.recordbtn.Size = new System.Drawing.Size(297, 55);
+            this.recordbtn.Size = new System.Drawing.Size(280, 55);
             this.recordbtn.TabIndex = 17;
             this.recordbtn.Text = "Record";
             this.recordbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -244,7 +243,7 @@
             this.supllierbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.supllierbtn.Name = "supllierbtn";
             this.supllierbtn.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.supllierbtn.Size = new System.Drawing.Size(297, 55);
+            this.supllierbtn.Size = new System.Drawing.Size(280, 55);
             this.supllierbtn.TabIndex = 16;
             this.supllierbtn.Text = "Supplier";
             this.supllierbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -258,9 +257,9 @@
             this.panelsubstock.Controls.Add(this.stockentrybtn);
             this.panelsubstock.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubstock.Location = new System.Drawing.Point(0, 510);
-            this.panelsubstock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelsubstock.Margin = new System.Windows.Forms.Padding(4);
             this.panelsubstock.Name = "panelsubstock";
-            this.panelsubstock.Size = new System.Drawing.Size(297, 108);
+            this.panelsubstock.Size = new System.Drawing.Size(280, 108);
             this.panelsubstock.TabIndex = 15;
             // 
             // stcokadjustmentbtn
@@ -273,7 +272,7 @@
             this.stcokadjustmentbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stcokadjustmentbtn.Name = "stcokadjustmentbtn";
             this.stcokadjustmentbtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.stcokadjustmentbtn.Size = new System.Drawing.Size(297, 52);
+            this.stcokadjustmentbtn.Size = new System.Drawing.Size(280, 52);
             this.stcokadjustmentbtn.TabIndex = 16;
             this.stcokadjustmentbtn.Text = " Adjustment";
             this.stcokadjustmentbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -290,7 +289,7 @@
             this.stockentrybtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stockentrybtn.Name = "stockentrybtn";
             this.stockentrybtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.stockentrybtn.Size = new System.Drawing.Size(297, 55);
+            this.stockentrybtn.Size = new System.Drawing.Size(280, 55);
             this.stockentrybtn.TabIndex = 15;
             this.stockentrybtn.Text = "Stock Entry";
             this.stockentrybtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -307,22 +306,12 @@
             this.instockbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.instockbtn.Name = "instockbtn";
             this.instockbtn.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.instockbtn.Size = new System.Drawing.Size(297, 55);
+            this.instockbtn.Size = new System.Drawing.Size(280, 55);
             this.instockbtn.TabIndex = 14;
             this.instockbtn.Text = "In Stock";
             this.instockbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.instockbtn.UseVisualStyleBackColor = true;
             this.instockbtn.Click += new System.EventHandler(this.instockbtn_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // panelsubpro
             // 
@@ -334,7 +323,7 @@
             this.panelsubpro.Location = new System.Drawing.Point(0, 297);
             this.panelsubpro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelsubpro.Name = "panelsubpro";
-            this.panelsubpro.Size = new System.Drawing.Size(297, 158);
+            this.panelsubpro.Size = new System.Drawing.Size(280, 158);
             this.panelsubpro.TabIndex = 3;
             // 
             // brandbtn
@@ -347,7 +336,7 @@
             this.brandbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.brandbtn.Name = "brandbtn";
             this.brandbtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.brandbtn.Size = new System.Drawing.Size(297, 58);
+            this.brandbtn.Size = new System.Drawing.Size(280, 58);
             this.brandbtn.TabIndex = 5;
             this.brandbtn.Text = "Brand";
             this.brandbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -364,7 +353,7 @@
             this.categorybtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.categorybtn.Name = "categorybtn";
             this.categorybtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.categorybtn.Size = new System.Drawing.Size(297, 52);
+            this.categorybtn.Size = new System.Drawing.Size(280, 52);
             this.categorybtn.TabIndex = 4;
             this.categorybtn.Text = "Category";
             this.categorybtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -381,7 +370,7 @@
             this.productlistbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.productlistbtn.Name = "productlistbtn";
             this.productlistbtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.productlistbtn.Size = new System.Drawing.Size(297, 48);
+            this.productlistbtn.Size = new System.Drawing.Size(280, 48);
             this.productlistbtn.TabIndex = 3;
             this.productlistbtn.Text = "Product List";
             this.productlistbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -398,7 +387,7 @@
             this.Productbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Productbtn.Name = "Productbtn";
             this.Productbtn.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.Productbtn.Size = new System.Drawing.Size(297, 63);
+            this.Productbtn.Size = new System.Drawing.Size(280, 63);
             this.Productbtn.TabIndex = 2;
             this.Productbtn.Text = "Product";
             this.Productbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -415,7 +404,7 @@
             this.dashboardbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dashboardbtn.Name = "dashboardbtn";
             this.dashboardbtn.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.dashboardbtn.Size = new System.Drawing.Size(297, 53);
+            this.dashboardbtn.Size = new System.Drawing.Size(280, 53);
             this.dashboardbtn.TabIndex = 1;
             this.dashboardbtn.Text = "Dashboard";
             this.dashboardbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -431,7 +420,7 @@
             this.panellogo.Location = new System.Drawing.Point(0, 0);
             this.panellogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panellogo.Name = "panellogo";
-            this.panellogo.Size = new System.Drawing.Size(297, 181);
+            this.panellogo.Size = new System.Drawing.Size(280, 181);
             this.panellogo.TabIndex = 0;
             this.panellogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -487,11 +476,20 @@
             this.titlelable.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.titlelable.Click += new System.EventHandler(this.label1_Click);
             // 
+            // panelMain
+            // 
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(297, 62);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1598, 571);
+            this.panelMain.TabIndex = 2;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1895, 1061);
+            this.ClientSize = new System.Drawing.Size(1895, 633);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.dashboardpanel);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -526,7 +524,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button instockbtn;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelsubstock;
         private System.Windows.Forms.Button stcokadjustmentbtn;
         private System.Windows.Forms.Button stockentrybtn;
@@ -541,5 +538,6 @@
         private System.Windows.Forms.Button setting;
         private System.Windows.Forms.Button logoutbtn;
         private System.Windows.Forms.Label titlelable;
+        private System.Windows.Forms.Panel panelMain;
     }
 }

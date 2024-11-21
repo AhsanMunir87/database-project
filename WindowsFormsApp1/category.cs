@@ -16,5 +16,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void addbrandbtn_Click(object sender, EventArgs e)
+        {
+            categoryModule categoryModule = new categoryModule();
+            categoryModule.ShowDialog();
+        }
     }
 }
